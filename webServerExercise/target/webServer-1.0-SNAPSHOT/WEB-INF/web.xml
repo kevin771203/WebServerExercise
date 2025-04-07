@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>TryServlet</servlet-name>
+        <servlet-class>myCode.TryServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>GetFormServlet</servlet-name>
+        <servlet-class>myCode.GetFormServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PostFormServlet</servlet-name>
+        <servlet-class>myCode.PostFormServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CookieServlet</servlet-name>
+        <servlet-class>myCode.CookieServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>myCode.SessionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>book.BookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TryServlet</servlet-name>
+        <url-pattern>/try</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>GetFormServlet</servlet-name>
+        <url-pattern>/formHandling</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PostFormServlet</servlet-name>
+        <url-pattern>/postBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CookieServlet</servlet-name>
+        <url-pattern>/cookieRegis</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/sessionRegis</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/findBook</url-pattern>
+    </servlet-mapping>
+</web-app>
